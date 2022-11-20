@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    </head>
+    <style>
+        #btn{
+            color: orangered;
+            padding: 20px 30px;
+            
+                background-color: black
+                
+            
+        }
+        #para{
+            color: aqua;
+        }
+    </style>
+   
+    
+    
+    
+ 
+        <body>
+            <h4>This is first React Project</h4>
+        <p  id="para" >Online Programs for Leaders at all Levels of the Organization. Contact Sales to Learn More. Start a CorpU Trial Course and Learn from Faculty Experts from Top Academic Institutions. Empower Your Team. Prove the ROI of Learning. Drive Employee Engagement. Prepare Your Workforce.</p>
+        <button  id="btn" onclick="toogler()">SHOW/HIGH</button>
+        
+      
+        
+        
+          
+        <script>
+        let para=document.getElementById('para')
+        para.addEventListener('mouseover',function(){
+             alert('mousemover in side' )
+        })
+            function toogler(){
+                let btn=document.getElementById('btn')
+                let para=document.getElementById('para')
+                if(para.style.display !='none'){
+                para.style.display='none'
+                }else{
+                    para.style.display='block'
+                }
+            }
+           
+            
+
+        
+        </script>
+        
+          </body>
+        
+        
+    </html>
